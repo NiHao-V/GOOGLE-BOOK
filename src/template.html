@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop</title>
+    <link rel="stylesheet" type="text/css" href="main.scss">
+</head>
+
+<body>
+    <header class="header container">
+        <div class="logo">Bookshop</div>
+
+        <nav>
+            <ul class="header-menu">
+                <li class="header-menu-item active"><a href="#">books</a></li>
+                <li class="header-menu-item"><a href="#">audiobooks</a></li>
+                <li class="header-menu-item"><a href="#">Stationery & gifts</a></li>
+                <li class="header-menu-item"><a href="#">blog</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="mobil-menu">
+                <li class="header-menu-item active"><a href="#">books</a></li>
+                <li class="header-menu-item"><a href="#">audiobooks</a></li>
+                <li class="header-menu-item"><a href="#">Stationery & gifts</a></li>
+                <li class="header-menu-item"><a href="#">blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a class="header-icons__item" href="#"><img src="./images/user.svg" alt="user-icon"></a>
+            <a class="header-icons__item" href="#"><img src="./images/search.svg" alt="search-icon"></a>
+            <a class="header-icons__item" href="#"><img src="./images/shop-bag.svg" alt="shop-bag-icon">
+                <div id="circle">0</div>
+            </a>
+        </div>
+
+    </header>
+
+    <main class="main container">
+        <section class="slider">
+            <div class="slider-images">
+                <div class="image active" style="background-image: url('./images/banner.jpg');"></div>
+                <div class="image" style="background-image: url('./images/banner2.jpg');"></div>
+                <div class="image" style="background-image: url('./images/banner3.jpg');"></div>
+            </div>
+            <div class="slider-dots"></div>
+        </section>
+
+        <section class="rectangles-cover">
+            <a class="purple-rectangle" href="#">
+                <span class="purple-rectangle-text">Change old book on new</span>
+                <img class="rectangle-arrow" src="./images/arrow.svg" alt='стрелка'>
+            </a>
+
+            <a class="pink-rectangle" href="#">
+                <span class="pink-rectangle-text">top 100 books 2022</span>
+                <img class="rectangle-arrow" src="./images/arrow.svg" alt='стрелка'>
+            </a>
+        </section>
+        <section class="catalog">
+            <nav class="catalog-menu">
+                <ul class="catalog-menu_list">
+                    <li class="catalog-menu_item active">Architecture</li>
+                    <li class="catalog-menu_item">Art & Fashion</li>
+                    <li class="catalog-menu_item">Biography</li>
+                    <li class="catalog-menu_item">Business</li>
+                    <li class="catalog-menu_item">Crafts & Hobbies</li>
+                    <li class="catalog-menu_item">Drama</li>
+                    <li class="catalog-menu_item">Fiction</li>
+                    <li class="catalog-menu_item">Food & Drink</li>
+                    <li class="catalog-menu_item">Health & Wellbeing</li>
+                    <li class="catalog-menu_item">History & Politics</li>
+                    <li class="catalog-menu_item">Humor</li>
+                    <li class="catalog-menu_item">Poetry</li>
+                    <li class="catalog-menu_item">Psychology</li>
+                    <li class="catalog-menu_item">Science</li>
+                    <li class="catalog-menu_item">Technology</li>
+                    <li class="catalog-menu_item">Travel & Maps</li>
+                </ul>
+            </nav>
+
+            <div class="catalog-field">
+                <div id="bookList">
+                    <!-- Книги будут динамически добавляться сюда -->
+                </div>
+
+                <div class="catalog-download">
+                    <button id="loadMoreBtn">Load more</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
